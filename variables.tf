@@ -27,7 +27,7 @@ variable "vpc_name" {
 
 variable "app_name" {
   description = "Name of Elastic Bean Application"
-  default     = "internetApp"
+  default     = "appname"
 }
 
 variable "environment"     { 

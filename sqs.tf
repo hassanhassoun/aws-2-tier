@@ -1,5 +1,5 @@
 resource "aws_sqs_queue" "dead-queue" {
-  name = "work-dead-queue"
+  name = "dead-work-q"
   delay_seconds = 90
   max_message_size = 2048
   message_retention_seconds = 86400
@@ -7,7 +7,7 @@ resource "aws_sqs_queue" "dead-queue" {
 }
 
 resource "aws_sqs_queue" "queue" {
-  name = "work-queue"
+  name = "work-q"
   delay_seconds = 90
   max_message_size = 2048
   message_retention_seconds = 86400
